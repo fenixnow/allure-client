@@ -113,6 +113,7 @@ HTTPSignatureAuthSetting = TypedDict(
 AuthSettings = TypedDict(
     "AuthSettings",
     {
+        "bearerAuth": BearerFormatAuthSetting,
     },
     total=False,
 )
@@ -165,6 +166,7 @@ class Configuration:
     :param cert_file: the path to a client certificate file, for mTLS.
     :param key_file: the path to a client key file, for mTLS.
 
+    :Example:
     """
 
     _default: ClassVar[Optional[Self]] = None
@@ -495,6 +497,14 @@ class Configuration:
         :return: The Auth Settings information dict.
         """
         auth: AuthSettings = {}
+        if self.access_token is not None:
+            auth['bearerAuth'] = {
+                'type': 'bearer',
+                'in': 'header',
+                'format': 'JWT',
+                'key': 'Authorization',
+                'value': 'Bearer ' + self.access_token
+            }
         return auth
 
     def to_debug_report(self) -> str:
@@ -506,7 +516,7 @@ class Configuration:
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 525u01\n"\
-               "SDK Package Version: 1.0.0".\
+               "SDK Package Version: 0.1.0".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self) -> List[HostSetting]:
