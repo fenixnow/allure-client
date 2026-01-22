@@ -169,6 +169,7 @@ allure_client/api/tree_controller_api.py
 allure_client/api/tree_controller_v2_api.py
 allure_client/api/tree_folder_controller_api.py
 allure_client/api/tree_path_controller_api.py
+allure_client/api/uaa_controller_api.py
 allure_client/api/upload_controller_api.py
 allure_client/api/user_controller_api.py
 allure_client/api/webhook_controller_api.py
@@ -499,6 +500,7 @@ allure_client/models/node_type.py
 allure_client/models/normalized_scenario_dto.py
 allure_client/models/normalized_scenario_step_dto.py
 allure_client/models/number_only_dto.py
+allure_client/models/oauth_token200_response.py
 allure_client/models/ordered_value_dto_string.py
 allure_client/models/page_access_group_dto.py
 allure_client/models/page_access_group_pa_dto.py

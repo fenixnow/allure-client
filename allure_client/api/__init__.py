@@ -165,6 +165,7 @@ from allure_client.api.tree_controller_api import TreeControllerApi
 from allure_client.api.tree_controller_v2_api import TreeControllerV2Api
 from allure_client.api.tree_folder_controller_api import TreeFolderControllerApi
 from allure_client.api.tree_path_controller_api import TreePathControllerApi
+from allure_client.api.uaa_controller_api import UaaControllerApi
 from allure_client.api.upload_controller_api import UploadControllerApi
 from allure_client.api.user_controller_api import UserControllerApi
 from allure_client.api.webhook_controller_api import WebhookControllerApi

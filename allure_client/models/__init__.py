@@ -332,6 +332,7 @@ from allure_client.models.node_type import NodeType
 from allure_client.models.normalized_scenario_dto import NormalizedScenarioDto
 from allure_client.models.normalized_scenario_step_dto import NormalizedScenarioStepDto
 from allure_client.models.number_only_dto import NumberOnlyDto
+from allure_client.models.oauth_token200_response import OauthToken200Response
 from allure_client.models.ordered_value_dto_string import OrderedValueDtoString
 from allure_client.models.page_access_group_dto import PageAccessGroupDto
 from allure_client.models.page_access_group_pa_dto import PageAccessGroupPaDto

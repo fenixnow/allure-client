@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 # Define package exports
 __all__ = [
@@ -182,6 +182,7 @@ __all__ = [
     "TreeControllerV2Api",
     "TreeFolderControllerApi",
     "TreePathControllerApi",
+    "UaaControllerApi",
     "UploadControllerApi",
     "UserControllerApi",
     "WebhookControllerApi",
@@ -516,6 +517,7 @@ __all__ = [
     "NormalizedScenarioDto",
     "NormalizedScenarioStepDto",
     "NumberOnlyDto",
+    "OauthToken200Response",
     "OrderedValueDtoString",
     "PageAccessGroupDto",
     "PageAccessGroupPaDto",
@@ -1128,6 +1130,7 @@ from allure_client.api.tree_controller_api import TreeControllerApi as TreeContr
 from allure_client.api.tree_controller_v2_api import TreeControllerV2Api as TreeControllerV2Api
 from allure_client.api.tree_folder_controller_api import TreeFolderControllerApi as TreeFolderControllerApi
 from allure_client.api.tree_path_controller_api import TreePathControllerApi as TreePathControllerApi
+from allure_client.api.uaa_controller_api import UaaControllerApi as UaaControllerApi
 from allure_client.api.upload_controller_api import UploadControllerApi as UploadControllerApi
 from allure_client.api.user_controller_api import UserControllerApi as UserControllerApi
 from allure_client.api.webhook_controller_api import WebhookControllerApi as WebhookControllerApi
@@ -1466,6 +1469,7 @@ from allure_client.models.node_type import NodeType as NodeType
 from allure_client.models.normalized_scenario_dto import NormalizedScenarioDto as NormalizedScenarioDto
 from allure_client.models.normalized_scenario_step_dto import NormalizedScenarioStepDto as NormalizedScenarioStepDto
 from allure_client.models.number_only_dto import NumberOnlyDto as NumberOnlyDto
+from allure_client.models.oauth_token200_response import OauthToken200Response as OauthToken200Response
 from allure_client.models.ordered_value_dto_string import OrderedValueDtoString as OrderedValueDtoString
 from allure_client.models.page_access_group_dto import PageAccessGroupDto as PageAccessGroupDto
 from allure_client.models.page_access_group_pa_dto import PageAccessGroupPaDto as PageAccessGroupPaDto
